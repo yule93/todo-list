@@ -18,4 +18,6 @@ const colorPalette = ({colors, selected, onSelect}) => {
       {colorList}
     </div>
   );
-}
+};
+
+export default colorPalette;

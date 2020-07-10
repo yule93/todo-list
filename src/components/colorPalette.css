@@ -13,3 +13,8 @@
 .color.active {
   opacity: 1;
 }
+
+.palette {
+  display: flex;
+  justify-content: center;
+}
