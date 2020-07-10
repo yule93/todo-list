@@ -10,5 +10,12 @@ const Color = ({color, active, onClick}) => {
 };
 
 const colorPalette = ({colors, selected, onSelect}) => {
-
+  const colorList = colors.map(
+    (color) => (<Color color={color} active = {selected === color} onClick = {()=> onSelect(color)} key={color}/>)
+  );
+  return (
+    <div className = "palette">
+      {colorList}
+    </div>
+  );
 }
