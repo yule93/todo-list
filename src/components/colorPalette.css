@@ -1,0 +1,15 @@
+.color {
+  width: 1rem;
+  height: 1rem;
+  opacity: 0.5;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.color:hover {
+  opacity: 0.75;
+}
+
+.color.active {
+  opacity: 1;
+}
