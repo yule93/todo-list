@@ -1,6 +1,11 @@
+.palette {
+  display: flex;
+  justify-content: center;
+}
+
 .color {
-  width: 1rem;
-  height: 1rem;
+  width: 2rem;
+  height: 2rem;
   opacity: 0.5;
   transition: all 0.2s;
   cursor: pointer;
@@ -10,11 +15,10 @@
   opacity: 0.75;
 }
 
-.color.active {
+.color.active, .color:active {
   opacity: 1;
 }
 
-.palette {
-  display: flex;
-  justify-content: center;
+.color + .color {
+  margin-left: 1rem;
 }

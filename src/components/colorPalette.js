@@ -1,15 +1,15 @@
 import React from 'react';
-import './colorPalette.css';
+import './ColorPalette.css';
 
 const Color = ({color, active, onClick}) => {
   return (
-      <div className = {`color $ {active && 'active'}`} style = {{background: color}} onClick = {onClick}>
+      <div className = {`color ${active && 'active'}`} style = {{background: color}} onClick = {onClick}>
 
       </div>
   );
 };
 
-const colorPalette = ({colors, selected, onSelect}) => {
+const ColorPalette = ({colors, selected, onSelect}) => {
   const colorList = colors.map(
     (color) => (<Color color={color} active = {selected === color} onClick = {()=> onSelect(color)} key={color}/>)
   );
@@ -20,4 +20,4 @@ const colorPalette = ({colors, selected, onSelect}) => {
   );
 };
 
-export default colorPalette;
+export default ColorPalette;
